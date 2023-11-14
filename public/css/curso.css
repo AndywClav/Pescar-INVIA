@@ -1,21 +1,99 @@
 /* Estilos generales para el cuerpo de la página */
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #070606cb;
+    background-color: black;
     margin: 0;
     padding: 0;
-}
+} 
 
 /* Estilos para el encabezado */
-header {
-    background-color: #472B71;
-    color: #fff;
-    padding: 20px;
+.curso-header {
+    background-color: #5D60C0;
+    color: #000000;
     text-align:left;
 }
 
-header h1 {
-    font-size: 2em;
+/*Aca empieza la barra lateral de marcas*/
+.aside-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    }
+    .aside-logo {
+      position: fixed;
+      background-color: var(--Negro);
+    }
+    .inicio .aside-logo li:hover {
+    transform: scale(1.1);
+    }
+    #chatgpt {
+      position: relative;
+      top: 0.5rem;
+    }
+    #discord {
+      position: relative;
+      left: 0.5rem;
+      bottom: 0.4rem;
+    }
+    #twitter {
+      position: relative;
+      left: 0.2rem;
+    }
+
+    
+/* Section */
+#cursos-section {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    justify-items: auto ;
+} 
+
+/* Estilos para el encabezado */
+.index-header {
+    background-color: #black;
+    color: #white;
+    padding: 15px;
+    text-align: center; /* Alinea el texto al centro */
+}
+
+.index-header .list-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.index-header .logo {
+    font-size: 2.5em;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .list-element {
+    margin: 0 20px;
+}
+
+.navbar .list-element a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar .btn {
+    background-color: #472B71;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.5s;
+}
+
+.navbar .btn:hover {
+    background-color: #1d1d1d;
 }
 
 /* Estilos para los botones de cursos */
@@ -23,34 +101,27 @@ header h1 {
     background-color: #472B71;
     color: #fff;
     border: none;
-    border-radius: 10px;
-    padding: 25px;
+    border-radius: 20px; /* Aumentamos el radio del borde para hacerlo más atractivo */
+    padding: 10px 25px; /* Ajustamos el espaciado interno para hacerlo más equitativo */
     margin: 15px;
-    cursor:pointer ;
+    cursor: pointer;
     width: 340px;
-    text-align: right;
+    text-align: center; /* Centramos el texto en el botón */
     transition: background-color 0.5s;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    position: relative; /* Añadimos una posición relativa para poder posicionar la imagen interna */
+    overflow: hidden; /* Ocultamos cualquier desbordamiento de contenido */
 }
 
 /* Estilos para la imagen dentro del botón */
 .curso-button img {
-    max-width: 20%;
+    max-width: 25%;
     border-radius: 5px 5px 0 0;
     float: left;
 }
 
+
 .curso-button:hover {
-    background-color: #472B71;
+    background-color: #e4dbec; /* Cambiamos el color de fondo al pasar el cursor */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); /* Hacemos que la sombra sea un poco más prominente */ /* Cambia el color de fondo al pasar el cursor */
 }
-
-#botones {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-
-
-
