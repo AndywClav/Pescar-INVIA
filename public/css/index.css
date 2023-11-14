@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap');
+<<<<<<< HEAD
 
+=======
+>>>>>>> braian
 :root{
   /*Fonts*/
   --Poppins: 'Poppins', sans-serif;
@@ -8,6 +11,7 @@
   --Negro: black;
   --VioletaClaro:#5D60C0;
   --VioletaMedio:#835CBF;
+<<<<<<< HEAD
   --CelesteClaro:#AAD9D9;
 }
 .lightMode{
@@ -21,6 +25,8 @@
 }
 .lightMode header .list-container .navbar .list-element .btn:hover{
   color: var(--CelesteClaro);
+=======
+>>>>>>> braian
 }
 *{
   margin: 0;
@@ -49,11 +55,19 @@ header {
   position: fixed;
   background-color: var(--Negro);
   height: 13%;
+<<<<<<< HEAD
+=======
+  top: 0; left: 0; right: 0;
+>>>>>>> braian
   margin: 0 0 0 1%;
 }
 header .logo {
   font-size: 7.8rem;
   font-weight: bolder;
+<<<<<<< HEAD
+=======
+  color: var(--B);
+>>>>>>> braian
   margin-left: 2rem;
 }
 header .navbar {
@@ -65,6 +79,7 @@ header .navbar {
   font-size: 3rem;
   align-items: center;
   justify-content: space-between;
+<<<<<<< HEAD
 }
 header .list-container .navbar .list-element:hover .burger-list-explorar {
   display: block;
@@ -114,6 +129,9 @@ header .list-container .navbar .list-element:hover .burger-list-comunidad {
 .burger-list-explorar li:hover {
   background-color: var(--VioletaClaro);
   color: var(--Negro);
+=======
+  z-index: 1000;
+>>>>>>> braian
 }
 header .list-container .navbar .list-element:hover {
   transform: scale(1.1);
@@ -123,12 +141,17 @@ header .list-container .navbar .list-element .btn {
   border: var(--Blanco) solid 0.2rem;
   border-radius: 3rem 0 3rem 0;
   padding: 0.5rem 7rem;
+<<<<<<< HEAD
+=======
+  margin: 0 0 0 3rem;
+>>>>>>> braian
 }
 header .list-container .navbar .list-element .btn:hover{
   transform: scale(1.1);
   background-color: var(--Blanco);
   color: var(--Negro);
 }
+<<<<<<< HEAD
 
 .inicio {
   display: flex;
@@ -137,10 +160,32 @@ header .list-container .navbar .list-element .btn:hover{
   padding-left: 5%;
   padding-top: 11%;
   height: 125rem;
+=======
+/*Aca empieza lo que seria el codigo del toggle
+para el navbar responsive.*/
+header .checkbox-btn {
+  font-size: 5.8rem;
+  float: right;
+  display: none;
+}
+header .checkbox-btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+header #checkbox-check {
+  display: none;
+}
+section {
+  display: flex;
+  margin: 2rem 0;
+  padding-left: 5%;
+  padding-top: 10%;
+>>>>>>> braian
 }
 .content {
   margin-right: 3%;
 }
+<<<<<<< HEAD
 .inicio h2 {
   font-size: 4.9rem;
 }
@@ -152,43 +197,77 @@ header .list-container .navbar .list-element .btn:hover{
   font-size: 3.4rem;
 }
 .inicio  .btn-container {
+=======
+  section h2 {
+  font-size: 4.9rem;
+}
+section h1 {
+  color: var(--VioletaClaro);
+  font-size: 10.5rem;
+} 
+section p {
+  font-size: 3.4rem;
+}
+section  .btn-container {
+>>>>>>> braian
   display: flex;
   flex: 1 1 30;
   justify-content: space-between;
   margin-top: 5rem;
   padding: 0 1rem 0 1rem;
 }
+<<<<<<< HEAD
 .inicio .content .btn-container .btn {
+=======
+section .content .btn-container .btn {
+>>>>>>> braian
   font-size: 2.9rem;
   border: var(--Blanco) solid 0.2rem;
   border-radius: 0.4rem; 
 }
+<<<<<<< HEAD
 .inicio .content #cursos {
+=======
+section .content #cursos {
+>>>>>>> braian
   font-weight: bold;
   color: var(--Blanco);
   background-color: var(--VioletaClaro);
   padding: 2rem 5rem 2rem 5rem;
 }
+<<<<<<< HEAD
 .inicio .content #estudio {
+=======
+section .content #estudio {
+>>>>>>> braian
   font-weight: bold;
   color: var(--VioletaClaro);
   background-color: var(--Negro);
   padding: 2rem 5rem 2rem 5rem;
 }
+<<<<<<< HEAD
 .inicio .btn-container #estudio:hover {
+=======
+section .btn-container #estudio:hover {
+>>>>>>> braian
   transition-duration: 0.5s ;
   background-color: var(--Blanco);
   color: var(--VioletaClaro);
   transform: scale(1.1);
   cursor: pointer;
 }
+<<<<<<< HEAD
 .inicio .btn-container #cursos:hover {
+=======
+section .btn-container #cursos:hover {
+>>>>>>> braian
   transition-duration: 0.5s ;
   background-color: var(--Blanco) ;
   color: var(--VioletaClaro);
   transform: scale(1.1);
   cursor: pointer;
 }
+<<<<<<< HEAD
 .horizontal-line{
   height: 55rem;
   margin: 10rem 5rem 0 20rem;
@@ -198,12 +277,22 @@ header .list-container .navbar .list-element .btn:hover{
   margin: 3rem 15rem 0 5rem;
   height: 125rem;
   width: 70rem;
+=======
+.img-container {
+  border-left: var(--Blanco) solid 0.7rem;
+  margin-left: 5%;
+>>>>>>> braian
 }
 .inicio div #foto-chica {
   border: var(--Blanco) solid 0.6rem; 
   border-radius: 5rem;
+<<<<<<< HEAD
   height: 55%;
   margin: 0 0% 0% 10%;
+=======
+  height: 70%;
+  margin: 0 20% 0% 20%;
+>>>>>>> braian
 }
 /*Aca empieza la barra lateral de marcas*/
 .aside-logo-container {
@@ -211,13 +300,37 @@ header .list-container .navbar .list-element .btn:hover{
   flex-direction: column;
   align-items: flex-end;
   padding: 0;
+<<<<<<< HEAD
   }
   .aside-logo {
   position: fixed;
+=======
+  margin-left: 2rem;
+  }
+  .aside-logo {
+    position: fixed;
+    background-color: var(--Negro);
+>>>>>>> braian
   }
   .inicio .aside-logo li:hover {
   transform: scale(1.1);
   }
+<<<<<<< HEAD
+=======
+  #chatgpt {
+    position: relative;
+    top: 0.5rem;
+  }
+  #discord {
+    position: relative;
+    left: 0.5rem;
+    bottom: 0.4rem;
+  }
+  #twitter {
+    position: relative;
+    left: 0.2rem;
+  }
+>>>>>>> braian
   /*Este es el sector de los rombos, estan metidos en un div
   y los movi con la posicion absolute para que esten en
   el fondo como decoracion*/
@@ -249,21 +362,44 @@ El @keyframe es para la animacion y el resto para los estilos*/
   background-color: var(--Blanco);
   overflow: hidden;
   padding: 3rem 3rem;
+<<<<<<< HEAD
   height: 30rem;
+=======
+>>>>>>> braian
 }
 section .carousel{
   display: inline-block;
   margin: 4rem 0;
+<<<<<<< HEAD
   animation: 5s slide infinite linear;
+=======
+  animation: 7s slide infinite linear;
+>>>>>>> braian
 }
 section .carousel img{
   height: 70px;
   margin: 3rem;
 }
 /*Media Queries*/
+<<<<<<< HEAD
 /* @media (min-width:576px) and (max-width) {}
 @media (max-width: 992px){}
 @media (max-width: 890px){}
+=======
+/* @media (min-width:576px) and (max-width) {
+  html {font-size: 25%;}
+}
+@media (max-width: 992px){}
+
+@media (max-width: 890px){
+  header {margin-bottom: 5rem;}
+  header .list-container .navbar { display: none;  display: block;  position: fixed;} 
+  header .list-container .navbar .list-element a {display: block;  width: 100%; 
+background-color: var(--VioletaMedio); color: var(--Blanco); margin: 2rem, 0, 2rem, 0;}
+  header .checkbox-btn {
+  display: block; margin-top: 1.3rem; margin-right: 5rem;}
+} 
+>>>>>>> braian
 @media (min-width) and (max-width){}
 @media (min-width) and (max-width){}
  */
