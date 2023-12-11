@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="/public/css/popupLogin.css">
+</head>
+<body>
+    <button id="loginButton" onclick="crearCuenta()">Iniciar sesión</button>
+    
+    <script>
+        function crearCuenta() {    
+            const popUpCrearCuentaDiv = document.createElement("div");
+            popUpCrearCuentaDiv.className = "login-container";
+            popUpCrearCuentaDiv.innerHTML = `
+                <h2>Iniciar Sesión Estudiante</h2>
+                <div class="social-media-bar">
+                    <a href="#"><img src="google.png" alt="Google"></a>
+                    <a href="#"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub"></a>
+                    <a href="#"><img src="apple.png" alt="Apple"></a>
+                    <a href="#"><img src="https://static.licdn.com/scds/common/u/images/logos/favicons/v1/favicon.ico" alt="LinkedIn"></a>
+                </div>
+                <div class="login-crear-cuenta">
+                    <p>o registrate <a href="url-de-la-pagina-de-registro" target="_blank">Crear cuenta</a></p>
+                </div>
+                <form action="/login" method="post">
+                    <input type="text" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Contraseña" required>
+                    <input type="submit" value="Iniciar Sesión">
+                </form>
+                <div class="login-crear-cuenta">
+                    <p>¿Eres empresa? <a href="url-de-la-pagina-de-registro" target="_blank">Iniciar Sesión</a></p>
+                </div>
+                <div class="login-footer">
+                    <p><a href="#">Términos y Condiciones</a><a href="#"> Política de Privacidad</a></p>
+                    <p><a href="#">Colaboradores</a></p>
+                </div>
+            `;
+
+            document.body.appendChild(popUpCrearCuentaDiv);
+            exitPopUp();
+        }
+
+        function exitPopUp() {
+            const loginContainer = document.querySelector(".login-container");
+
+            if (loginContainer) {
+                loginContainer.addEventListener("click", (e) => {
+                    const clickedElement = e.target;
+
+                    if (!clickedElement.closest(".login-container")) {
+                        e.preventDefault();
+                        loginContainer.remove();
+                    }
+                });
+            }
+        }
+    </script>
+</body>
+</html>
