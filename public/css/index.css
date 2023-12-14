@@ -188,7 +188,7 @@ El @keyframe es para la animacion y el resto para los estilos*/
   margin: 3rem;
 }
 /*Media Queries*/
-@media (min-width:320px) and (max-width:400px) {
+@media (min-width:320px) and (max-width:450px) {
   html{ font-size: 20%;}
   .list-container .menu-computadora {display: none;}/* 
   .img-container {height: 89rem; width: 22rem; margin: 2rem 55rem 0 5rem;} */
@@ -201,7 +201,7 @@ El @keyframe es para la animacion y el resto para los estilos*/
   .menu-smartphone {height: 100%; width: 100%;}
   .aside-logo-container {position: relative; right: 2px; margin-right: 0;}
 }
-@media (min-width:401px) and (max-width:460px) {
+@media (min-width:451px) and (max-width:700px) {
   html{ font-size: 15%;}
   .list-container .menu-computadora {display: none;}
   .img-container-inicio {height: 89rem; width: 22rem; margin: 2rem 55rem 0 5rem;}
@@ -214,7 +214,7 @@ El @keyframe es para la animacion y el resto para los estilos*/
   .aside-logo-container {z-index: 3;}
   .menu-responsive {display: none;} 
 }
-@media (min-width: 461px) and (max-width:879px){
+@media (min-width: 701px) and (max-width:879px){
   html{ font-size: 30%;}
   .list-container .menu-computadora {display: none;}
   .img-container-inicio {height: 89rem; width: 22rem; margin: 2rem 55rem 0 5rem;}
